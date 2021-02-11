@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,200&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.mynavbar{
+    position: relative;
+
+}
+.mynavbar ul{
+    position: absolute;
+    top: 40px;
+    left: 950px;
+   
+}
+.mynavbar ul li{
+    list-style-type: none;
+    display: inline;
+   margin-left: 35px;  
+   font-size: 20px;  
+   letter-spacing: 2px;
+   font-weight: 300;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+.mynavbar p{
+    position: absolute;
+    top: 32px;
+    left: 100px;
+    font-size: 27px;
+    letter-spacing: 2px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+}
+.mynavbar .drop{
+    position: absolute;
+    top: 10px;
+    left: 520px;
+    width: 35px;
+    height: 35px;
+    animation: bounce 1.7s infinite;
+}
+@keyframes bounce{
+    10%{
+        height:35px ;
+        width: 35px;
+    }
+  
+    50%{
+        height: 30px;
+        width: 42px;
+        transform:translateY(30px);
+    }
+    
+    100%{
+        transform: translateY(0px);
+    }
+}
+.mynavbar .shadow{
+    position: absolute;
+    top: 75px;
+    left: 515px;
+    width: 50px;
+    height: 8px;
+    background-color: rgba(99, 99, 99, 0.02);
+    border-radius: 50%;
+    z-index: -1;
+    animation: shrink 1.7s infinite;
+}
+@keyframes shrink{
+    50%{
+        transform: scaleX(0.6);
+    }
+}
+.mynavbar .sidebar{
+    animation: none;
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 450px;
+    top: 15px;
+     
+}
+
+/* Responsive */
+
+@media(max-width:1720px){
+    .mynavbar ul{
+        left: 850px;
+    }
+}
+@media(max-width:1660px){
+    .mynavbar ul{
+        left: 800px;
+    }
+}
+
+@media(max-width:1590px){
+    .mynavbar ul{
+        left: 650px;
+    }
+}
+
+@media(max-width:1410px){
+    .mynavbar ul li{
+        font-size: 16px;
+        margin-left: 25px;
+       
+    }
+    .mynavbar p{
+        font-size: 22px;
+        top: 40px;
+    }
+    .mynavbar ul{
+        top: 45px;
+    }
+    .mynavbar .drop{
+        left: 450px;
+        top: 20px;
+        height: 30px;
+        width: 30px;
+    }
+    .mynavbar .shadow{
+        left: 445px;
+        top: 80px;
+    }
+
+}
+@media(max-width:1269px){
+    .mynavbar ul{
+        left: 600px;
+    }
+}
+@media(max-width:1220px){
+    .mynavbar .sidebar{
+        display: block;
+        margin-left: 600px;
+        margin-top: 25px;
+        cursor: pointer;
+        
+    }
+   .mynavbar ul li{
+       display: block;
+       margin-top: -10px;
+       z-index: 1;
+       margin-left: -600px;
+       width: 129vh;  
+       height: 195px;
+       background-color:#B3DDFF ;
+       border-radius: 12px;
+       padding-top: 35px;
+       box-shadow: 0px 10px 12px rgba(34, 35, 36, 0.5);
+       display: none;
+       
+       }
+      .mynavbar ul li a{
+          color: white;
+          letter-spacing: 3px;
+          font-weight: 600;
+          font-size: 22px;
+      }
+   .mynavbar ul{
+       text-align: center;
+       margin-top: 60px;
+     
+   }
+ 
+}
+@media(max-width:1110px){
+    .mynavbar .sidebar{
+        margin-left: 500px;
+    }
+
+}
+@media(max-width:1050px){
+    .mynavbar .sidebar{
+        margin-left: 400px;
+    }
+}
+@media(max-width:910px){
+    .mynavbar .sidebar{
+        margin-left: 300px;
+    }
+    .mynavbar ul li{
+        width: 100vh;
+    }
+}
+@media(max-width:810px){
+    .mynavbar .sidebar{
+        margin-left: 210px;
+    }
+}
+@media(max-width:750px){
+    .mynavbar .sidebar{
+        margin-left:170px;
+    }
+    .mynavbar p{
+        font-size: 18px;
+        top: 45px;
+        left: 30px;
+    }
+    .mynavbar .drop{
+        top: 35px;
+        left: 325px;
+        width: 25px;
+        height: 25px;
+    }
+    @keyframes bounce{
+        10%{
+            height:25px ;
+            width: 25px;
+        }
+      
+        50%{
+            height: 20px;
+            width: 32px;
+            transform:translateY(20px);
+        }
+        
+        100%{
+            transform: translateY(0px);
+        }
+    }
+   
+}

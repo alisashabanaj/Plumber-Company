@@ -1,0 +1,44 @@
+.box{
+    position: relative;
+    position: absolute;
+    z-index: -1;
+    top: 730px;
+}
+.box .box2{
+    
+    width: 350px;
+    border-radius: 9px;
+    height: 260px;
+    background-color: white;
+    border: none;
+    transition: all .300s ease-in-out;
+}
+.box ul li{
+    float: left;
+    margin-left: 140px;
+}
+.box ul{
+    list-style-type: none;
+    margin-left: 120px;
+}
+
+.box2 h1{
+font-size: 20px;
+letter-spacing: 1px;
+font-weight: 400;
+text-align: center;
+width: 200px;
+margin-left: 70px;
+color: rgb(124, 124, 124);
+margin-top: 20px;
+}
+.box2 img{
+    width: 50px;
+    height: auto;
+    opacity: 0.8;
+    margin-left: 140px;
+    margin-top: 70px;
+}
+.box .box2:hover{
+    transform: scale(1.1);
+}
